@@ -30,8 +30,8 @@ if($request->isMethod('POST') && $request->isXmlHttpRequest()){
 
         $message = Swift_Message::newInstance()
             ->setSubject('Регистрация на вечеринку')
-            ->setFrom(['no-reply@i-vengo.com'])
-            ->setTo([$targetEmail])
+            ->setFrom(array('no-reply@i-vengo.com'))
+            ->setTo(array($targetEmail))
             ->setBody($twig->render('mail.html.twig',[
                 'name' => $form['name'],
                 'company' => $form['company'],
