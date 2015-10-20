@@ -32,12 +32,12 @@ if($request->isMethod('POST') && $request->isXmlHttpRequest()){
             ->setSubject('Регистрация на вечеринку')
             ->setFrom(array('no-reply@i-vengo.com'))
             ->setTo(array($targetEmail))
-            ->setBody($twig->render('mail.html.twig',[
+            ->setBody($twig->render('mail.html.twig',array(
                 'name' => $form['name'],
                 'company' => $form['company'],
                 'position' => $form['position'],
                 'email' => $form['email']
-            ]),'text/html');
+            )),'text/html');
 
         echo $mailer->send($message);
     }else{
