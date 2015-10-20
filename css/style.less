@@ -31,6 +31,9 @@ html{
       color: #fff;
       font-size: 20px;
       margin: 35px 20px;
+      &.evil-cunt{
+        margin: -20px 20px 35px 20px;
+      }
     }
     a{
       text-decoration: none;
@@ -56,7 +59,8 @@ html{
       }
       &.contacts{
         min-height: 780px;
-        background: url('/img/bg.bottom4.png') no-repeat top #293a88;
+        background: url('/img/bg.bottom4.png') no-repeat center 125px #293a88;
+        padding: 0 0 50px 0;
         .section-title{
           background: url('/img/title5.png') no-repeat center;
           max-width: 312px;
@@ -113,7 +117,9 @@ html{
             }
           }
           p{
-            color :#000;
+            color: #000;
+            text-align: left;
+            padding: 0 0 0 170px;
           }
         }
       }
@@ -130,6 +136,19 @@ html{
           max-width: 376px;
           height: 50px;
           background-size: 100%;
+        }
+        .cube-small{
+          display: inline-block;
+          position: relative;
+          &:before{
+            content: '';
+            background: url('/img/cube.small.png') no-repeat center;
+            width: 36px;
+            height: 39px;
+            position: absolute;
+            left: -50px;
+            top: -7px;
+          }
         }
         form{
           width: 90%;

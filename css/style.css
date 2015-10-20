@@ -30,6 +30,9 @@ html body p {
   font-size: 20px;
   margin: 35px 20px;
 }
+html body p.evil-cunt {
+  margin: -20px 20px 35px 20px;
+}
 html body a {
   text-decoration: none;
   color: #fff;
@@ -55,7 +58,8 @@ html body section .section-title {
 }
 html body section.contacts {
   min-height: 780px;
-  background: url('/img/bg.bottom4.png') no-repeat top #293a88;
+  background: url('/img/bg.bottom4.png') no-repeat center 125px #293a88;
+  padding: 0 0 50px 0;
 }
 html body section.contacts .section-title {
   background: url('/img/title5.png') no-repeat center;
@@ -115,6 +119,8 @@ html body section.partners .uber a img {
 }
 html body section.partners .uber p {
   color: #000;
+  text-align: left;
+  padding: 0 0 0 170px;
 }
 html body section.registration {
   min-height: 643px;
@@ -130,6 +136,19 @@ html body section.registration .section-title {
   max-width: 376px;
   height: 50px;
   background-size: 100%;
+}
+html body section.registration .cube-small {
+  display: inline-block;
+  position: relative;
+}
+html body section.registration .cube-small:before {
+  content: '';
+  background: url('/img/cube.small.png') no-repeat center;
+  width: 36px;
+  height: 39px;
+  position: absolute;
+  left: -50px;
+  top: -7px;
 }
 html body section.registration form {
   width: 90%;
