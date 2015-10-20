@@ -108,6 +108,7 @@ html body section.partners .uber {
   width: 100%;
   float: left;
   clear: both;
+  margin: 0 0 30px 0;
 }
 html body section.partners .uber a {
   float: left;
