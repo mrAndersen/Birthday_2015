@@ -1,0 +1,341 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('/fonts/calibri.ttf') format('opentype');
+}
+
+@media (max-width: 950px){
+
+  ul{
+    display: none !important;
+  }
+  .row{
+    width: 95% !important;
+    .label{
+      width:100% !important;
+      text-align: left !important;
+    }
+  }
+}
+
+html{
+  font-family: Calibri sa;
+  body{
+    font-size: 14px;
+    p{
+      color: #fff;
+      font-size: 20px;
+      margin: 35px 20px;
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+      &:hover{
+        text-decoration: none;
+        color: #759ecd;
+      }
+    }
+    .colored{
+      color: #99d6ff;
+    }
+    img{
+      display: block;
+    }
+    section{
+      width: 100%;
+      float: left;
+      .section-title{
+        display: inline-block;
+        margin: 55px 0 0 0;
+        width: 100%;
+      }
+      &.contacts{
+        min-height: 780px;
+        background: url('/img/bg.bottom4.png') no-repeat top #293a88;
+        .section-title{
+          background: url('/img/title5.png') no-repeat center;
+          max-width: 312px;
+          height: 41px;
+          background-size: 100%;
+        }
+        #map{
+          width: 100%;
+          height: 300px;
+        }
+        .arrow-up{
+          background: url('/img/arrows.sprite.png') no-repeat center;
+          width: 61px;
+          height: 70px;
+          clear: both;
+          display: inline-block;
+          background-position: -61px 0px;
+          cursor: pointer;
+          margin: 35px 0 0 0;
+        }
+      }
+      &.partners{
+        width: 100%;
+        min-height: 606px;
+        .section-title{
+          background: url('/img/title4.png') no-repeat center;
+          max-width: 310px;
+          height: 52px;
+          background-size: 100%;
+        }
+        .partner-container{
+          width: 100%;
+          margin: 20px 0 0 0;
+          a{
+            display: block;
+            float: left;
+            margin: 20px 50px;
+            img{
+              display: block;
+              border: none;
+            }
+          }
+        }
+        .uber{
+          width: 100%;
+          float: left;
+          clear: both;
+          a{
+            float: left;
+            display: block;
+            img{
+              display: block;
+              border: none;
+            }
+          }
+          p{
+            color :#000;
+          }
+        }
+      }
+      &.registration{
+        min-height: 643px;
+        width: 100%;
+        background: url('/img/bg.bottom2.png') no-repeat top fixed #1ba5ef;
+        .thx{
+          display: none;
+          font-size: 40px;
+        }
+        .section-title{
+          background: url('/img/title3.png') no-repeat center;
+          max-width: 376px;
+          height: 50px;
+          background-size: 100%;
+        }
+        form{
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          .row{
+            float: left;
+            width: 80%;
+            &.last{
+              margin: 0 0 50px 0;
+            }
+            .label{
+              float: left;
+              width: 142px;
+              text-align: right;
+              padding: 0 20px 0 0;
+              font-size: 20px;
+              color: #fff;
+              margin: 12px 0 0 0;
+            }
+            .input{
+              float: left;
+              width: 100%;
+              max-width: 520px;
+              text-align: left;
+              input{
+                font-family: Calibri;
+                height: 37px;
+                font-size: 16px;
+                margin: 5px 0;
+                background: none;
+                border: solid 1px #fff;
+                color: #fff;
+                padding: 0 10px;
+                width: 100%;
+              }
+            }
+          }
+          input[type="submit"]{
+            clear: both;
+            display: block;
+            left: 50%;
+            position: relative;
+            width: 201px;
+            background: none;
+            border: solid 1px #fff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: Calibri;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: center;
+            margin: 0 0 0 -100px;
+            &:hover, &:active, &:focus{
+              background: #69c4f4;
+            }
+          }
+        }
+      }
+      &.top-logo-section{
+        min-height: 772px;
+        width: 100%;
+        background: url('/img/bg.top.png') no-repeat top fixed #293a88;
+        .logo{
+          display: block;
+          width: 125px;
+          height: 86px;
+          background: url('/img/logo.top.png') no-repeat center;
+          float: left;
+          margin: 25px 0 0 35px;
+        }
+        .top-menu{
+          float: right;
+          margin: 55px 35px 0 0;
+          list-style: none;
+          li{
+            float: left;
+            margin: 0 10px 0 0;
+            a{
+              font-size: 18px;
+            }
+          }
+        }
+        .center-logo{
+          background: url('/img/logo.png') no-repeat center;
+          max-width: 423px;
+          height: 318px;
+          margin: 0 auto;
+          clear: both;
+          background-size: 100%;
+        }
+        .arrow-down{
+          background: url('/img/arrows.sprite.png') no-repeat center;
+          width: 61px;
+          height: 70px;
+          clear: both;
+          display: block;
+          background-position: 0px 0px;
+          cursor: pointer;
+          margin: 35px 0 10px -30px;
+          float: left;
+          left: 50%;
+          position: relative;
+        }
+        .icon-top-container{
+          text-align: center;
+          width: 100%;
+          .icon-top{
+            background: url('/img/date.time.sprite.png');
+            display: inline-block;
+            margin: 25px 0 0 0;
+            &.date{
+              background-position: 0px 0px;
+              width: 200px;
+              height: 199px;
+              float: left;
+              margin: 0 0 0 55px;
+            }
+            &.time{
+              width: 170px;
+              height: 156px;
+              background-position: -200px 0px;
+            }
+            &.place{
+              width: 197px;
+              height: 201px;
+              background-position: -370px 0px;
+              float: right;
+              margin: 0 55px 0 0;
+            }
+          }
+        }
+      }
+      &.what-is-inside-cube-section{
+        min-height: 436px;
+        width: 100%;
+        background: url('/img/bg.bottom.png') no-repeat center #1ba5ef;
+        .section-title{
+          background: url('/img/title1.png') no-repeat center;
+          max-width: 398px;
+          height: 54px;
+          background-size: 100%;
+        }
+      }
+      &.features{
+        background: #293a88;
+        min-height: 446px;
+        .section-title{
+          background: url('/img/title2.png') no-repeat center;
+          max-width: 381px;
+          height: 42px;
+          background-size: 100%;
+        }
+        .features-container{
+          text-align: center;
+          width: 100%;
+          .feature{
+            width: 180px;
+            height: 180px;
+            display: inline-block;
+            text-align: center;
+            .text{
+              color: #fff;
+              font-size: 20px;
+            }
+            .icon{
+              display: inline-block;
+              background: url('/img/features.png') no-repeat center;
+              &.cock{
+                width: 172px;
+                height: 171px;
+                background-position: 0px 0px;
+              }
+              &.dj{
+                width: 162px;
+                height: 161px;
+                background-position: -172px 0px;
+              }
+              &.photo{
+                width: 127px;
+                height: 127px;
+                background-position: -334px 0px;
+              }
+              &.presentation{
+                width: 162px;
+                height: 161px;
+                background-position: -461px 0px;
+              }
+              &.cake{
+                width: 172px;
+                height: 171px;
+                background-position: -623px 0px;
+              }
+            }
+          }
+        }
+      }
+      .inner{
+        max-width: 950px;
+        margin: 0 auto;
+        min-height: 1px;
+        position: relative;
+        text-align: center;
+      }
+    }
+  }
+}
