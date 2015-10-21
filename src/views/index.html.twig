@@ -17,18 +17,18 @@
     window.onload = function(){
         var map;
         var target;
-        var already = '{{ already }}';
         var sent = function(){
             $('.registration p:not(.thx), .registration form, .registration .section-title').animate({
                 'opacity' : 0
             },600,function(){
                 $('.thx').show();
             });
+
+            var d = setTimeout(function(){
+                location.reload();
+            },2500);
         };
 
-        if(already == 'yes'){
-            sent();
-        }
 
         ymaps.ready(function(){
             map = new ymaps.Map("map", {
@@ -205,6 +205,7 @@
             <a href="http://www.winediscovery.ru/" target="_blank"><img src="/img/partners/wine.png" title="Wine Discovery" alt="Wine Discovery"></a>
             <a href="http://getmobian.com/" target="_blank"><img src="/img/partners/get%20mobian.png" title="get Mobian" alt="get Mobian"></a>
             <a href="http://www.sostav.ru/" target="_blank"><img src="/img/partners/Logo_sostav_red.png" title="Sostav" alt="Sostav"></a>
+            <a href="http://foxmoment.ru/" target="_blank"><img src="/img/partners/Foxmoment_logo_krupno.png" title="Foxmoment" alt="Foxmoment"></a>
         </div>
         <div class="uber">
             <a href="https://www.uber.com/app" target="_blank"><img class="uber-logo" src="/img/partners/uber.png" title="Uber" alt="Uber"></a>
