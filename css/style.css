@@ -109,6 +109,7 @@ html body section.partners .partner-container a {
 html body section.partners .partner-container a img {
   display: block;
   border: none;
+  position: relative;
 }
 html body section.partners .uber {
   width: 100%;
