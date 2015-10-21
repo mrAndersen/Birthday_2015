@@ -17,6 +17,7 @@
     window.onload = function(){
         var map;
         var target;
+        var already = '{{ already }}';
         var sent = function(){
             $('.registration p:not(.thx), .registration form, .registration .section-title').animate({
                 'opacity' : 0
@@ -24,6 +25,10 @@
                 $('.thx').show();
             });
         };
+
+        if(already == 'yes'){
+            sent();
+        }
 
         ymaps.ready(function(){
             map = new ymaps.Map("map", {

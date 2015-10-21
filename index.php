@@ -3,7 +3,7 @@
 require('vendor/autoload.php');
 
 session_start();
-setcookie(session_name(),session_id(),time() + 300);
+setcookie(session_name(),session_id(),time() + 86400);
 
 $loader = new Twig_Loader_Filesystem('src/views');
 $twig = new Twig_Environment($loader);
@@ -44,7 +44,9 @@ if($request->isMethod('POST') && $request->isXmlHttpRequest()){
         echo 2;
     }
 }else{
-    echo $twig->render('index.html.twig');
+    echo $twig->render('index.html.twig',array(
+        'already' => isset($_SESSION['cube-sent']) ? 'yes' : 'no'
+    ));
 }
 
 
