@@ -104,12 +104,20 @@ html body section.partners .partner-container {
 html body section.partners .partner-container a {
   display: block;
   float: left;
-  margin: 20px 50px;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  position: relative;
 }
 html body section.partners .partner-container a img {
-  display: block;
+  display: inline-block;
   border: none;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 html body section.partners .uber {
   width: 100%;
